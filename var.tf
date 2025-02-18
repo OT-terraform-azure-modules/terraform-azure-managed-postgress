@@ -99,3 +99,8 @@ variable "backup_retention_days" {
 variable "tags" {
   description = "Define resource tags"
 }
+
+variable "public_network_access_enabled" {
+  description = "public_network_access_enabled"
+  default = "false"
+}

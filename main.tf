@@ -64,6 +64,7 @@ resource "azurerm_postgresql_flexible_server" "default" {
   private_dns_zone_id    = azurerm_private_dns_zone.default.id
   administrator_login    = var.db_username
   administrator_password = var.db_password
+  public_network_access_enabled = var.public_network_access_enabled
   tags = merge(
   {
     "Name" = "${var.name}-server"
